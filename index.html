@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aaron Crisologo - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <nav aria-label="Main Navigation">
+        <div class="logo" aria-label="Aaron Crisologo">Aaron Crisologo</div>
+        <button class="mobile-menu-toggle" aria-expanded="false" aria-controls="main-menu">
+            <span class="sr-only">Toggle Menu</span>
+            <span class="hamburger-icon" aria-hidden="true">&#9776;</span>
+        </button>
+        <ul id="main-menu" class="nav-menu">
+            <li><a href="#home" aria-current="page">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-content">
+        <section id="home" class="section hero" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 id="hero-title" aria-label="Aaron Angelo D. Crisologo">Aaron Angelo D. Crisologo</h1>
+                    <p>Computer Science Student | Web Developer</p>
+                    <div class="social-links" aria-label="Social Media Links">
+                        <a href="https://linkedin.com/AaronCrisologo" target="_blank" aria-label="LinkedIn Profile">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://github.com/AaronCrisologo" target="_blank" aria-label="GitHub Profile">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                        </a>
+                        <a href="mailto:21-08166@g.batstate-u.edu.ph" aria-label="Email">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <a href="#contact" class="cta-button" aria-label="Contact Me">Get In Touch</a>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/unnamed.png" alt="Aaron Crisologo's Portrait" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section about-section" aria-labelledby="about-title">
+            <h2 id="about-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hi! I'm Aaron, a passionate Computer Science student specializing in Web Development. I love creating intuitive and responsive web applications that solve real-world problems.</p>
+                    <p>Born and raised in the Philippines, I'm constantly exploring new technologies and improving my skills in frontend and backend development.</p>
+                    
+                    <div class="personal-details" aria-label="Personal Information">
+                        <div><strong>Birthday:</strong> December 7, 2001</div>
+                        <div><strong>Location:</strong> Philippines</div>
+                        <div><strong>Interests:</strong> Web Development, Gaming, Technology</div>
+                    </div>
+                </div>
+                <div class="skills-chart" aria-label="Skills Proficiency">
+                    <div class="skill">
+                        <div class="skill-name">Web Development</div>
+                        <div class="skill-bar" style="width: 85%;" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">Frontend Development</div>
+                        <div class="skill-bar" style="width: 75%;"></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">Visual Design</div>
+                        <div class="skill-bar" style="width: 65%;"></div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">Creativity</div>
+                        <div class="skill-bar" style="width: 70%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section">
+          <h2>My Skills</h2>
+          <div class="skills-container">
+              <div class="skill-card">
+                  <div class="skill-icon">
+                      <i class="fas fa-code"></i>
+                  </div>
+                  <h3 class="skill-title">Programming Languages</h3>
+                  <div class="skill-list">
+                      <span class="skill-tag">C++</span>
+                      <span class="skill-tag">JavaScript</span>
+                      <span class="skill-tag">Dart</span>
+                      <span class="skill-tag">C#</span>
+                      <span class="skill-tag">Rust</span>
+                      <span class="skill-tag">Python</span>
+                  </div>
+              </div>
+      
+              <div class="skill-card">
+                  <div class="skill-icon">
+                      <i class="fas fa-laptop-code"></i>
+                  </div>
+                  <h3 class="skill-title">Web Technologies</h3>
+                  <div class="skill-list">
+                      <span class="skill-tag">HTML5</span>
+                      <span class="skill-tag">CSS3</span>
+                      <span class="skill-tag">React</span>
+                      <span class="skill-tag">Node.js</span>
+                  </div>
+              </div>
+      
+              <div class="skill-card">
+                  <div class="skill-icon">
+                      <i class="fas fa-tools"></i>
+                  </div>
+                  <h3 class="skill-title">Tools & Platforms</h3>
+                  <div class="skill-list">
+                      <span class="skill-tag">GitHub</span>
+                      <span class="skill-tag">Docker</span>
+                      <span class="skill-tag">VS Code</span>
+                      <span class="skill-tag">IntelliJ</span>
+                      <span class="skill-tag">Figma</span>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+        <section id="projects" class="projects-section">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="assets/graduation.png" alt="Project 1" class="imghigh">
+                    <h3>Class Compass</h3>
+                    <p>A mobile application designed to streamline and enhance the student experience.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/AaronCrisologo/Class-Compass-Your-University-Companion-App-" class="github-link">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="assets/cpu.png" alt="Project 2" class="imghigh">
+                    <h3>CPU Scheduling Simulation</h3>
+                    <p>A website that can visually simulate and compare CPU algorithms.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/AaronCrisologo/WST_CPU_Scheduling_SImulation" class="github-link">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="assets/park.png" alt="Project 3" class="imghigh">
+                    <h3>ParkSense</h3>
+                    <p>A desktop app utilizing data-driven approaches for sustainable parking management</p>
+                    <div class="project-links">
+                        <a href="https://github.com/AaronCrisologo/ParkSense-Utilizing-Data-Driven-Approaches-for-Sustainable-Parking-Management-in-Schools." class="github-link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="contact" class="section contact-section" aria-labelledby="contact-title">
+            <h2 id="contact-title">Contact Me</h2>
+            <form class="contact-form" aria-label="Contact Form">
+                <label for="name" class="sr-only">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                
+                <label for="email" class="sr-only">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                
+                <label for="message" class="sr-only">Message</label>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                
+                <button type="submit" aria-label="Send Message">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Aaron Crisologo. All Rights Reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
