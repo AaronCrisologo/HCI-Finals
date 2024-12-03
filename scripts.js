@@ -118,3 +118,62 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const accessibilityPanel = document.getElementById('accessibility-panel');
+    const panelToggle = accessibilityPanel.querySelector('.accessibility-panel-toggle');
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+    const highContrastToggle = document.getElementById('high-contrast-toggle');
+    const fontSizeSlider = document.getElementById('font-size-slider');
+    const fontSizeValue = document.getElementById('font-size-value');
+
+    // Breathing animation control
+    function startBreathingAnimation() {
+        panelToggle.classList.remove('stop-animation');
+    }
+
+    function stopBreathingAnimation() {
+        panelToggle.classList.add('stop-animation');
+    }
+
+    // Panel Toggle
+    panelToggle.addEventListener('click', () => {
+        accessibilityPanel.classList.toggle('open');
+        
+        if (accessibilityPanel.classList.contains('open')) {
+            stopBreathingAnimation();
+        }
+    });
+
+    // Dark Mode Toggle
+    darkModeToggle.addEventListener('change', () => {
+        document.body.classList.toggle('dark-mode');
+        
+        // Disable high contrast if dark mode is enabled
+        if (document.body.classList.contains('dark-mode')) {
+            highContrastToggle.checked = false;
+            document.body.classList.remove('high-contrast-mode');
+        }
+    });
+
+    // High Contrast Mode Toggle
+    highContrastToggle.addEventListener('change', () => {
+        document.body.classList.toggle('high-contrast-mode');
+        
+        // Disable dark mode if high contrast is enabled
+        if (document.body.classList.contains('high-contrast-mode')) {
+            darkModeToggle.checked = false;
+            document.body.classList.remove('dark-mode');
+        }
+    });
+
+    // Font Size Adjustment
+    fontSizeSlider.addEventListener('input', () => {
+        const fontSize = fontSizeSlider.value;
+        document.body.style.fontSize = `${fontSize}px`;
+        fontSizeValue.textContent = `${fontSize}px`;
+    });
+
+    // Start breathing animation on page load
+    startBreathingAnimation();
+});

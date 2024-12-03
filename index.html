@@ -25,7 +25,7 @@
         </ul>
     </nav>
 
-    <main id="main-content">
+    <main id="main-content" role="main">
         <section id="home" class="section hero" aria-labelledby="hero-title">
             <div class="hero-content">
                 <div class="hero-text">
@@ -45,7 +45,7 @@
                     <a href="#contact" class="cta-button" aria-label="Contact Me">Get In Touch</a>
                 </div>
                 <div class="hero-image">
-                    <img src="assets/unnamed.png" alt="Aaron Crisologo's Portrait" loading="lazy">
+                    <img src="assets/unnamed.png" alt="Portrait of Aaron Crisologo, a Computer Science student from the Philippines" loading="lazy">
                 </div>
             </div>
         </section>
@@ -70,15 +70,15 @@
                     </div>
                     <div class="skill">
                         <div class="skill-name">Frontend Development</div>
-                        <div class="skill-bar" style="width: 75%;"></div>
+                        <div class="skill-bar" style="width: 75%;" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                     <div class="skill">
                         <div class="skill-name">Visual Design</div>
-                        <div class="skill-bar" style="width: 65%;"></div>
+                        <div class="skill-bar" style="width: 65%;" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                     <div class="skill">
                         <div class="skill-name">Creativity</div>
-                        <div class="skill-bar" style="width: 70%;"></div>
+                        <div class="skill-bar" style="width: 70%;" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                 </div>
             </div>
@@ -135,7 +135,7 @@
             <h2>My Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <img src="assets/graduation.png" alt="Project 1" class="imghigh">
+                    <img src="assets/graduation.png" alt="Picture of Batangas State University" class="imghigh">
                     <h3>Class Compass</h3>
                     <p>A mobile application designed to streamline and enhance the student experience.</p>
                     <div class="project-links">
@@ -143,15 +143,15 @@
                     </div>
                 </div>
                 <div class="project-card">
-                    <img src="assets/cpu.png" alt="Project 2" class="imghigh">
+                    <img src="assets/cpu.png" alt="Abstarct Illustration of a representation of a CPU" class="imghigh">
                     <h3>CPU Scheduling Simulation</h3>
-                    <p>A website that can visually simulate and compare CPU algorithms.</p>
+                    <p>A website that can visually simulate and compare different CPU algorithms.</p>
                     <div class="project-links">
                         <a href="https://github.com/AaronCrisologo/WST_CPU_Scheduling_SImulation" class="github-link">GitHub</a>
                     </div>
                 </div>
                 <div class="project-card">
-                    <img src="assets/park.png" alt="Project 3" class="imghigh">
+                    <img src="assets/park.png" alt="Parking Lot" class="imghigh">
                     <h3>ParkSense</h3>
                     <p>A desktop app utilizing data-driven approaches for sustainable parking management</p>
                     <div class="project-links">
@@ -186,6 +186,34 @@
     <button id="scroll-to-top" aria-label="Scroll to Top">
         <i class="fas fa-arrow-up"></i>
     </button>    
+
+    <div id="accessibility-panel" class="accessibility-panel">
+        <div class="accessibility-panel-toggle">
+            <i class="fas fa-universal-access"></i>
+        </div>
+        
+        <div class="accessibility-panel-content">
+            <div class="accessibility-section">
+                <h3>Display Options</h3>
+                
+                <div class="toggle-group">
+                    <label for="dark-mode-toggle">Dark Mode</label>
+                    <input type="checkbox" id="dark-mode-toggle" class="toggle-switch">
+                </div>
+                
+                <div class="toggle-group">
+                    <label for="high-contrast-toggle">High Contrast</label>
+                    <input type="checkbox" id="high-contrast-toggle" class="toggle-switch">
+                </div>
+                
+                <div class="font-size-section">
+                    <label for="font-size-slider">Font Size</label>
+                    <input type="range" id="font-size-slider" min="12" max="24" value="16" step="1">
+                    <span id="font-size-value">16px</span>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="scripts.js"></script>
 </body>
