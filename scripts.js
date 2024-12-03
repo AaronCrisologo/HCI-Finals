@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const navMenu = document.getElementById('main-menu');
     const navElement = document.querySelector('nav');
     const navList = navElement?.querySelector('ul');
+    const scrollToTopButton = document.getElementById('scroll-to-top');
 
     if (mobileMenuToggle && navMenu) {
         // Toggle menu visibility
@@ -99,4 +100,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
         type();
     }
+
+    // Show or hide the button when scrolling
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            scrollToTopButton.classList.add('show');
+        } else {
+            scrollToTopButton.classList.remove('show');
+        }
+    });
+
+    // Scroll to top when the button is clicked
+    scrollToTopButton.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
 });
